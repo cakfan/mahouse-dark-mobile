@@ -1,14 +1,15 @@
-name: Deploy HTML to GitHub Pages
-
+name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main # Ubah jika branch utama berbeda
+
+permissions:
+  contents: write # Pastikan workflow bisa push ke gh-pages
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -18,13 +19,17 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install & Build
+      - name: Install Dependencies (Jika Perlu)
         run: |
-          npm install
-          npm run build || echo "No build script, skipping..."
+          npm install  # Hapus jika tidak ada package.json
+
+      - name: Build Project (Jika Perlu)
+        run: |
+          npm run build  # Hapus jika tidak ada proses build
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: src
+          folder: src # Sesuaikan dengan lokasi index.html
+          clean: true
