@@ -45,21 +45,21 @@
       </a>
     </header>
 
-    <main>
-      <!-- Search Input -->
-      <section
-        class="flex items-center gap-4 mt-[30px] bg-accent rounded-full px-5 mx-6 py-3.5"
-      >
-        <img
-          src="./assets/images/icons/search-normal.svg"
-          class="h-6 w-6 shrink-0"
-        />
-        <input
-          class="w-full placeholder-secondary text-[16px]"
-          placeholder="Search by city or agent"
-        />
-      </section>
+    <!-- Search Input -->
+    <div
+      class="group flex items-center gap-4 mt-[30px] bg-accent rounded-full px-5 mx-6 py-3.5 transition-all duration-300 focus-within:ring focus-within:ring-foreground hover:ring hover:ring-foreground"
+    >
+      <img
+        src="./assets/images/icons/search-normal.svg"
+        class="h-6 w-6 shrink-0"
+      />
+      <input
+        class="w-full placeholder-secondary text-[16px] group-hover:outline-none focus:outline-none"
+        placeholder="Search by city or agent"
+      />
+    </div>
 
+    <main>
       <!-- Categories Section -->
       <section class="relative mt-5 w-full overflow-hidden">
         <div class="swiper !px-6">
@@ -266,75 +266,76 @@
           </a>
         </div>
       </section>
-
-      <!-- Bottom Navbar -->
-      <nav class="sticky bottom-0 z-50">
-        <div class="flex justify-center w-full px-6 pb-[30px]">
-          <ul
-            class="flex gap-8 rounded-[100px] w-[345px] bg-accent px-[39px] py-3.5"
-          >
-            <li>
-              <a
-                href="#"
-                class="flex flex-col items-center justify-between gap-1.5"
-              >
-                <div class="relative h-6 w-6">
-                  <img src="./assets/images/icons/layer.svg" class="h-6 w-6" />
-                </div>
-                <p class="font-semibold text-[12px]">Browse</p>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="flex flex-col items-center justify-between gap-1.5"
-              >
-                <div class="relative h-6 w-6">
-                  <img
-                    src="./assets/images/icons/message-text.svg"
-                    class="h-6 w-6"
-                  />
-                  <div
-                    class="absolute top-0 right-[0.5px] w-2 h-2 bg-[#FF2929] rounded-full"
-                  ></div>
-                </div>
-                <p class="font-semibold text-[12px] text-secondary">Chats</p>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="flex flex-col items-center justify-between gap-1.5"
-              >
-                <div class="relative h-6 w-6">
-                  <img
-                    src="./assets/images/icons/archive-tick.svg"
-                    class="h-6 w-6"
-                  />
-                </div>
-                <p class="font-semibold text-[12px] text-secondary">Saved</p>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="flex flex-col items-center justify-between gap-1.5"
-              >
-                <div class="relative h-6 w-6">
-                  <img
-                    src="./assets/images/icons/setting-2.svg"
-                    class="h-6 w-6"
-                  />
-                </div>
-                <p class="font-semibold text-[12px] text-secondary">Settings</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
     </main>
+
+    <!-- Bottom Navbar -->
+    <nav class="sticky bottom-0 z-50">
+      <div class="flex justify-center w-full px-6 pb-[30px]">
+        <ul
+          class="flex gap-8 rounded-[100px] w-[345px] bg-accent px-[39px] py-3.5"
+        >
+          <li>
+            <a
+              href="#"
+              class="flex flex-col items-center justify-between gap-1.5"
+            >
+              <div class="relative h-6 w-6">
+                <img src="./assets/images/icons/layer.svg" class="h-6 w-6" />
+              </div>
+              <p class="font-semibold text-[12px]">Browse</p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="./chats.html"
+              class="flex flex-col items-center justify-between gap-1.5"
+            >
+              <div class="relative h-6 w-6">
+                <img
+                  src="./assets/images/icons/message-text.svg"
+                  class="h-6 w-6"
+                />
+                <div
+                  class="absolute top-0 right-[0.5px] w-2 h-2 bg-[#FF2929] rounded-full"
+                ></div>
+              </div>
+              <p class="font-semibold text-[12px] text-secondary">Chats</p>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="flex flex-col items-center justify-between gap-1.5"
+            >
+              <div class="relative h-6 w-6">
+                <img
+                  src="./assets/images/icons/archive-tick.svg"
+                  class="h-6 w-6"
+                />
+              </div>
+              <p class="font-semibold text-[12px] text-secondary">Saved</p>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="flex flex-col items-center justify-between gap-1.5"
+            >
+              <div class="relative h-6 w-6">
+                <img
+                  src="./assets/images/icons/setting-2.svg"
+                  class="h-6 w-6"
+                />
+              </div>
+              <p class="font-semibold text-[12px] text-secondary">Settings</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>

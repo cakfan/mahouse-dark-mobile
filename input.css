@@ -18,13 +18,20 @@
   --font-poppins: "Poppins", sans-serif;
 }
 
-/* Memaksa lebar slide tetap 130px */
-/* .swiper-slide { */
-/* width: 130px !important; */
-/* flex-shrink: 0 !important; Mencegah menyusut */
-/* } */
+.icon-layer {
+  -webkit-mask-image: url("./assets/images/icons/layer.svg");
+  mask-image: url("./assets/images/icons/layer.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
 
-/* Pastikan wrapper tidak memaksa flex */
-/* .swiper-wrapper {
-  display: flex !important;
-} */
+.icon-chats {
+  -webkit-mask-image: url("./assets/images/icons/message-text.svg");
+  mask-image: url("./assets/images/icons/message-text.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
