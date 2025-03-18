@@ -2,10 +2,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # Ubah jika branch utama berbeda
+      - main # Pastikan branch utama sesuai dengan repo kamu
 
 permissions:
-  contents: write # Pastikan workflow bisa push ke gh-pages
+  contents: write # Izinkan workflow menulis ke repository
 
 jobs:
   deploy:
@@ -14,22 +14,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-
-      - name: Install Dependencies (Jika Perlu)
-        run: |
-          npm install  # Hapus jika tidak ada package.json
-
-      - name: Build Project (Jika Perlu)
-        run: |
-          npm run build  # Hapus jika tidak ada proses build
-
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages
-          folder: src # Sesuaikan dengan lokasi index.html
+          branch: gh-pages # Membuat dan mengupdate branch gh-pages
+          folder: src # Sesuaikan dengan lokasi index.html (src/)
           clean: true
