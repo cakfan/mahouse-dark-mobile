@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-secondary">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Mahouse Dark Mode Mobile App</title>
+
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body
+    class="bg-background font-poppins pt-[30px] text-foreground mx-auto w-full max-w-[640px] min-h-screen overflow-x-hidden"
+  >
+    <!-- Header -->
+    <header class="flex w-full justify-between items-center px-6">
+      <div class="flex w-full items-center gap-3">
+        <div class="w-[70px] h-[70px] bg-accent rounded-full p-2">
+          <img
+            src="./assets/images/thumbnails/person-1.png"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <div class="w-fit">
+          <h1 class="font-semibold text-lg">Shayna Wy</h1>
+          <p class="text-[#7c7c7c] text-[14px]">Customer</p>
+        </div>
+      </div>
+
+      <a
+        href="#"
+        class="flex items-center justify-center shrink-0 h-[55px] w-[55px] bg-accent rounded-full"
+      >
+        <div class="relative h-6 w-6">
+          <img src="./assets/images/icons/notification.svg" />
+          <div
+            class="absolute top-[3px] right-0.5 w-2 h-2 bg-[#FF2929] rounded-full"
+          ></div>
+        </div>
+      </a>
+    </header>
+
+    <main>
+      <!-- Search Input -->
+      <section
+        class="flex items-center gap-4 mt-[30px] bg-accent rounded-full px-5 mx-6 py-3.5"
+      >
+        <img
+          src="./assets/images/icons/search-normal.svg"
+          class="h-6 w-6 shrink-0"
+        />
+        <input
+          class="w-full placeholder-secondary text-[16px]"
+          placeholder="Search by city or agent"
+        />
+      </section>
+
+      <!-- Categories Section -->
+      <section class="relative mt-5 w-full overflow-hidden">
+        <div class="swiper !px-6">
+          <div class="swiper-wrapper">
+            <!-- City -->
+            <a href="#" class="swiper-slide max-w-[130px]">
+              <div
+                class="flex flex-col gap-4 items-center justify-center py-5 bg-accent rounded-[16px] w-[130px]"
+              >
+                <div
+                  class="w-[60px] h-[60px] bg-primary rounded-full flex items-center justify-center shrink-0"
+                >
+                  <img src="./assets/images/icons/building-4.svg" />
+                </div>
+                <div class="text-center">
+                  <h6 class="font-semibold text-[16px]">City</h6>
+                  <div class="text-secondary text-[14px]">829 house</div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Nature -->
+            <a href="#" class="swiper-slide max-w-[130px]">
+              <div
+                class="flex flex-col gap-4 items-center justify-center py-5 bg-accent rounded-[16px] w-[130px]"
+              >
+                <div
+                  class="w-[60px] h-[60px] bg-primary rounded-full flex items-center justify-center shrink-0"
+                >
+                  <img src="./assets/images/icons/tree.svg" />
+                </div>
+                <div class="text-center">
+                  <h6 class="font-semibold text-[16px]">Nature</h6>
+                  <div class="text-secondary text-[14px]">54,293 house</div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Apartment -->
+            <a href="#" class="swiper-slide max-w-[130px]">
+              <div
+                class="flex flex-col gap-4 items-center justify-center py-5 bg-accent rounded-[16px] w-[130px]"
+              >
+                <div
+                  class="w-[60px] h-[60px] bg-primary rounded-full flex items-center justify-center shrink-0"
+                >
+                  <img src="./assets/images/icons/3dcube.svg" />
+                </div>
+                <div class="text-center">
+                  <h6 class="font-semibold text-[16px]">Apartment</h6>
+                  <div class="text-secondary text-[14px]">221 house</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Suggestions Section -->
+      <section class="relative mt-[30px] w-full">
+        <h3 class="px-6 mb-2 text-[16px] font-semibold">Staff Pics</h3>
+        <div class="swiper !px-6">
+          <div class="swiper-wrapper">
+            <!-- Item 1 -->
+            <a
+              href="#"
+              class="swiper-slide max-w-[230px] bg-accent rounded-[16px] pb-4 overflow-hidden"
+            >
+              <div class="flex flex-col w-full">
+                <div class="relative overflow-hidden">
+                  <img
+                    src="./assets/images/thumbnails/house-1.png"
+                    class="w-full h-[138px] object-cover"
+                  />
+                  <div class="flex flex-col gap-1.5 mt-4 px-4">
+                    <h2 class="text-[18px] font-bold">Rumahnya Angga</h2>
+                    <p class="text-[14px] text-secondary">
+                      9,301 sqft • House • Rent
+                    </p>
+                    <p class="text-[14px] text-secondary">
+                      <span class="text-[16px] font-bold text-[#C7A5FF]"
+                        >$69,000</span
+                      >/month
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- Item 2 -->
+            <a
+              href="#"
+              class="swiper-slide max-w-[230px] bg-accent rounded-[16px] pb-4 overflow-hidden"
+            >
+              <div class="flex flex-col w-full">
+                <div class="relative overflow-hidden">
+                  <img
+                    src="./assets/images/thumbnails/house-2.png"
+                    class="w-full h-[138px] object-cover"
+                  />
+                  <div class="flex flex-col gap-1.5 mt-4 px-4">
+                    <h2 class="text-[18px] font-bold">Maruji Inko</h2>
+                    <p class="text-[14px] text-secondary">
+                      2,891 sqft • House • Rent
+                    </p>
+                    <p class="text-[14px] text-secondary">
+                      <span class="text-[16px] font-bold text-[#C7A5FF]"
+                        >$12,593</span
+                      >/month
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular Section -->
+      <section class="mt-[30px] px-6 pb-[38px]">
+        <h3 class="text-[16px] font-semibold leading-[24px]">Popular Cities</h3>
+        <div class="grid grid-cols-2 gap-5 mt-2">
+          <!-- Item 1 -->
+          <a href="#" class="bg-accent rounded-[16px] overflow-hidden">
+            <div class="relative shrink-0">
+              <img
+                src="./assets/images/thumbnails/city-1.png"
+                class="h-[90px] w-full object-cover"
+              />
+            </div>
+            <div class="p-4">
+              <h6 class="text-[16px] font-bold">New York</h6>
+              <p class="text-[14px] text-secondary mt-1.5">193 house</p>
+            </div>
+          </a>
+
+          <!-- Item 2 -->
+          <a href="#" class="bg-accent rounded-[16px] overflow-hidden">
+            <div class="relative shrink-0">
+              <img
+                src="./assets/images/thumbnails/city-2.png"
+                class="h-[90px] w-full object-cover"
+              />
+            </div>
+            <div class="p-4">
+              <h6 class="text-[16px] font-bold">Kyoto</h6>
+              <p class="text-[14px] text-secondary mt-1.5">772 house</p>
+            </div>
+          </a>
+
+          <!-- Item 3 -->
+          <a href="#" class="bg-accent rounded-[16px] overflow-hidden">
+            <div class="relative shrink-0">
+              <img
+                src="./assets/images/thumbnails/city-3.png"
+                class="h-[90px] w-full object-cover"
+              />
+            </div>
+            <div class="p-4">
+              <h6 class="text-[16px] font-bold">Jakarta</h6>
+              <p class="text-[14px] text-secondary mt-1.5">193 house</p>
+            </div>
+          </a>
+
+          <!-- Item 4 -->
+          <a href="#" class="bg-accent rounded-[16px] overflow-hidden">
+            <div class="relative shrink-0">
+              <img
+                src="./assets/images/thumbnails/city-4.png"
+                class="h-[90px] w-full object-cover"
+              />
+            </div>
+            <div class="p-4">
+              <h6 class="text-[16px] font-bold">Hongkong</h6>
+              <p class="text-[14px] text-secondary mt-1.5">992 house</p>
+            </div>
+          </a>
+
+          <!-- Item 5 -->
+          <a href="#" class="bg-accent rounded-[16px] overflow-hidden">
+            <div class="relative shrink-0">
+              <img
+                src="./assets/images/thumbnails/city-1.png"
+                class="h-[90px] w-full object-cover"
+              />
+            </div>
+            <div class="p-4">
+              <h6 class="text-[16px] font-bold">New York</h6>
+              <p class="text-[14px] text-secondary mt-1.5">193 house</p>
+            </div>
+          </a>
+
+          <!-- Item 6 -->
+          <a href="#" class="bg-accent rounded-[16px] overflow-hidden">
+            <div class="relative shrink-0">
+              <img
+                src="./assets/images/thumbnails/city-2.png"
+                class="h-[90px] w-full object-cover"
+              />
+            </div>
+            <div class="p-4">
+              <h6 class="text-[16px] font-bold">Kyoto</h6>
+              <p class="text-[14px] text-secondary mt-1.5">772 house</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Bottom Navbar -->
+      <nav class="sticky bottom-0 z-50">
+        <div class="flex justify-center w-full px-6 pb-[30px]">
+          <ul
+            class="flex gap-8 rounded-[100px] w-[345px] bg-accent px-[39px] py-3.5"
+          >
+            <li>
+              <a
+                href="#"
+                class="flex flex-col items-center justify-between gap-1.5"
+              >
+                <div class="relative h-6 w-6">
+                  <img src="./assets/images/icons/layer.svg" class="h-6 w-6" />
+                </div>
+                <p class="font-semibold text-[12px]">Browse</p>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex flex-col items-center justify-between gap-1.5"
+              >
+                <div class="relative h-6 w-6">
+                  <img
+                    src="./assets/images/icons/message-text.svg"
+                    class="h-6 w-6"
+                  />
+                  <div
+                    class="absolute top-0 right-[0.5px] w-2 h-2 bg-[#FF2929] rounded-full"
+                  ></div>
+                </div>
+                <p class="font-semibold text-[12px] text-secondary">Chats</p>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="flex flex-col items-center justify-between gap-1.5"
+              >
+                <div class="relative h-6 w-6">
+                  <img
+                    src="./assets/images/icons/archive-tick.svg"
+                    class="h-6 w-6"
+                  />
+                </div>
+                <p class="font-semibold text-[12px] text-secondary">Saved</p>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="flex flex-col items-center justify-between gap-1.5"
+              >
+                <div class="relative h-6 w-6">
+                  <img
+                    src="./assets/images/icons/setting-2.svg"
+                    class="h-6 w-6"
+                  />
+                </div>
+                <p class="font-semibold text-[12px] text-secondary">Settings</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </main>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
