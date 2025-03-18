@@ -1,0 +1,16 @@
+{
+  "name": "mahouse-dark-mobile",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Taufan Fatahillah",
+  "type": "commonjs",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.14",
+    "tailwindcss": "^4.0.14"
+  }
+}
