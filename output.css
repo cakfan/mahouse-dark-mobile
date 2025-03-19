@@ -239,6 +239,9 @@
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
+  .mt-\[27\.46\%\] {
+    margin-top: 27.46%;
+  }
   .mt-\[30px\] {
     margin-top: 30px;
   }
