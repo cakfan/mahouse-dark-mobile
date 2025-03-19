@@ -35,3 +35,21 @@
   -webkit-mask-size: contain;
   mask-size: contain;
 }
+
+.icon-saved {
+  -webkit-mask-image: url("./assets/images/icons/archive-tick.svg");
+  mask-image: url("./assets/images/icons/archive-tick.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.icon-settings {
+  -webkit-mask-image: url("./assets/images/icons/setting-2.svg");
+  mask-image: url("./assets/images/icons/setting-2.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}

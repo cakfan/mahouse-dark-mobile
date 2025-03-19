@@ -48,7 +48,7 @@
     </header>
 
     <!-- Search Input -->
-    <div
+    <form
       class="group flex items-center gap-4 mt-[30px] bg-accent rounded-full px-5 mx-6 py-3.5 transition-all duration-300 focus-within:ring focus-within:ring-foreground hover:ring hover:ring-foreground"
     >
       <img
@@ -59,7 +59,7 @@
         class="w-full placeholder-secondary text-[16px] group-hover:outline-none focus:outline-none"
         placeholder="Search by city or agent"
       />
-    </div>
+    </form>
 
     <main>
       <!-- Categories Section -->
@@ -308,48 +308,68 @@
           <li>
             <a
               href="./chats.html"
-              class="flex flex-col items-center justify-between gap-1.5"
+              class="group flex flex-col items-center justify-between gap-1.5"
             >
               <div class="relative h-6 w-6">
-                <img
-                  src="./assets/images/icons/message-text.svg"
-                  class="h-6 w-6"
-                />
                 <div
-                  class="absolute top-0 right-[0.5px] w-2 h-2 bg-[#FF2929] rounded-full"
+                  class="icon-chats transition-all duration-300 group-hover:bg-foreground"
+                >
+                  <img
+                    src="./assets/images/icons/message-text.svg"
+                    class="h-6 w-6 group-hover:opacity-0 transition-all duration-300"
+                  />
+                </div>
+                <div
+                  class="absolute z-50 top-0 right-[0.5px] w-2 h-2 bg-[#FF2929] rounded-full"
                 ></div>
               </div>
-              <p class="font-semibold text-[12px] text-secondary">Chats</p>
+              <p
+                class="font-semibold transition-all duration-300 text-[12px] text-secondary group-hover:text-foreground"
+              >
+                Chats
+              </p>
             </a>
           </li>
 
           <li>
             <a
               href="#"
-              class="flex flex-col items-center justify-between gap-1.5"
+              class="group flex flex-col items-center justify-between gap-1.5"
             >
-              <div class="relative h-6 w-6">
+              <div
+                class="relative h-6 w-6 icon-saved transition-all duration-300 group-hover:bg-foreground"
+              >
                 <img
                   src="./assets/images/icons/archive-tick.svg"
-                  class="h-6 w-6"
+                  class="h-6 w-6 group-hover:opacity-0 transition-all duration-300"
                 />
               </div>
-              <p class="font-semibold text-[12px] text-secondary">Saved</p>
+              <p
+                class="font-semibold text-[12px] text-secondary group-hover:text-foreground"
+              >
+                Saved
+              </p>
             </a>
           </li>
 
           <li>
             <a
               href="#"
-              class="flex flex-col items-center justify-between gap-1.5"
+              class="group flex flex-col items-center justify-between gap-1.5"
             >
-              <div class="relative h-6 w-6">
+              <div
+                class="relative h-6 w-6 icon-settings group-hover:bg-foreground transition-all duration-300"
+              >
                 <img
                   src="./assets/images/icons/setting-2.svg"
-                  class="h-6 w-6"
+                  class="h-6 w-6 group-hover:opacity-0 transition-all duration-300"
                 />
               </div>
-              <p class="font-semibold text-[12px] text-secondary">Settings</p>
+              <p
+                class="font-semibold text-[12px] text-secondary group-hover:text-foreground transition-all duration-300"
+              >
+                Settings
+              </p>
             </a>
           </li>
         </ul>
