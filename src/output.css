@@ -584,6 +584,10 @@
     --tw-leading: 24px;
     line-height: 24px;
   }
+  .leading-\[32px\] {
+    --tw-leading: 32px;
+    line-height: 32px;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
