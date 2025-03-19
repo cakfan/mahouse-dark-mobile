@@ -14,15 +14,17 @@
     />
   </head>
   <body
-    class="bg-background font-poppins pt-[30px] text-foreground mx-auto w-full max-w-[640px] min-h-screen overflow-x-hidden"
+    class="bg-background pb-[144px] font-poppins pt-[30px] text-foreground mx-auto w-full max-w-[640px] min-h-screen overflow-x-hidden"
   >
     <!-- Header -->
     <header class="flex w-full justify-between items-center px-6">
       <div class="flex w-full items-center gap-3">
-        <div class="w-[70px] h-[70px] bg-accent rounded-full p-2">
+        <div
+          class="w-[70px] h-[70px] bg-accent rounded-full p-2 overflow-hidden"
+        >
           <img
             src="./assets/images/thumbnails/person-1.png"
-            class="w-full h-full object-cover"
+            class="w-full h-full rounded-full object-cover"
           />
         </div>
 
@@ -34,7 +36,7 @@
 
       <a
         href="#"
-        class="flex items-center justify-center shrink-0 h-[55px] w-[55px] bg-accent rounded-full"
+        class="flex items-center justify-center shrink-0 h-[55px] w-[55px] bg-accent rounded-full transition-all duration-300 hover:ring hover:ring-foreground"
       >
         <div class="relative h-6 w-6">
           <img src="./assets/images/icons/notification.svg" />
@@ -46,7 +48,7 @@
     </header>
 
     <!-- Search Input -->
-    <div
+    <form
       class="group flex items-center gap-4 mt-[30px] bg-accent rounded-full px-5 mx-6 py-3.5 transition-all duration-300 focus-within:ring focus-within:ring-foreground hover:ring hover:ring-foreground"
     >
       <img
@@ -57,17 +59,17 @@
         class="w-full placeholder-secondary text-[16px] group-hover:outline-none focus:outline-none"
         placeholder="Search by city or agent"
       />
-    </div>
+    </form>
 
     <main>
       <!-- Categories Section -->
-      <section class="relative mt-5 w-full overflow-hidden">
+      <section class="relative w-full overflow-hidden">
         <div class="swiper !px-6">
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper py-5">
             <!-- City -->
-            <a href="#" class="swiper-slide max-w-[130px]">
+            <a href="#" class="swiper-slide group max-w-[130px]">
               <div
-                class="flex flex-col gap-4 items-center justify-center py-5 bg-accent rounded-[16px] w-[130px]"
+                class="flex flex-col gap-4 items-center justify-center py-5 bg-accent rounded-[16px] w-[130px] transition-all duration-300 group-hover:ring group-hover:ring-foreground"
               >
                 <div
                   class="w-[60px] h-[60px] bg-primary rounded-full flex items-center justify-center shrink-0"
@@ -75,16 +77,16 @@
                   <img src="./assets/images/icons/building-4.svg" />
                 </div>
                 <div class="text-center">
-                  <h6 class="font-semibold text-[16px]">City</h6>
-                  <div class="text-secondary text-[14px]">829 house</div>
+                  <h3 class="font-semibold text-[16px]">City</h3>
+                  <p class="text-secondary text-[14px]">829 house</p>
                 </div>
               </div>
             </a>
 
             <!-- Nature -->
-            <a href="#" class="swiper-slide max-w-[130px]">
+            <a href="#" class="swiper-slide group max-w-[130px]">
               <div
-                class="flex flex-col gap-4 items-center justify-center py-5 bg-accent rounded-[16px] w-[130px]"
+                class="flex flex-col gap-4 items-center justify-center py-5 bg-accent rounded-[16px] w-[130px] transition-all duration-300 group-hover:ring group-hover:ring-foreground"
               >
                 <div
                   class="w-[60px] h-[60px] bg-primary rounded-full flex items-center justify-center shrink-0"
@@ -92,16 +94,16 @@
                   <img src="./assets/images/icons/tree.svg" />
                 </div>
                 <div class="text-center">
-                  <h6 class="font-semibold text-[16px]">Nature</h6>
-                  <div class="text-secondary text-[14px]">54,293 house</div>
+                  <h3 class="font-semibold text-[16px]">Nature</h3>
+                  <p class="text-secondary text-[14px]">54,293 house</p>
                 </div>
               </div>
             </a>
 
             <!-- Apartment -->
-            <a href="#" class="swiper-slide max-w-[130px]">
+            <a href="#" class="swiper-slide group max-w-[130px]">
               <div
-                class="flex flex-col gap-4 items-center justify-center py-5 bg-accent rounded-[16px] w-[130px]"
+                class="flex flex-col gap-4 items-center justify-center py-5 bg-accent rounded-[16px] w-[130px] transition-all duration-300 group-hover:ring group-hover:ring-foreground"
               >
                 <div
                   class="w-[60px] h-[60px] bg-primary rounded-full flex items-center justify-center shrink-0"
@@ -109,8 +111,8 @@
                   <img src="./assets/images/icons/3dcube.svg" />
                 </div>
                 <div class="text-center">
-                  <h6 class="font-semibold text-[16px]">Apartment</h6>
-                  <div class="text-secondary text-[14px]">221 house</div>
+                  <h3 class="font-semibold text-[16px]">Apartment</h3>
+                  <p class="text-secondary text-[14px]">221 house</p>
                 </div>
               </div>
             </a>
@@ -119,14 +121,14 @@
       </section>
 
       <!-- Suggestions Section -->
-      <section class="relative mt-[30px] w-full">
-        <h3 class="px-6 mb-2 text-[16px] font-semibold">Staff Pics</h3>
+      <section class="relative mt-2.5 w-full">
+        <h2 class="px-6 text-[16px] font-semibold">Staff Pics</h2>
         <div class="swiper !px-6">
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper pt-2 pb-[30px]">
             <!-- Item 1 -->
             <a
               href="#"
-              class="swiper-slide max-w-[230px] bg-accent rounded-[16px] pb-4 overflow-hidden"
+              class="swiper-slide max-w-[230px] bg-accent rounded-[16px] pb-4 overflow-hidden transition-all duration-300 hover:ring hover:ring-foreground"
             >
               <div class="flex flex-col w-full">
                 <div class="relative overflow-hidden">
@@ -135,13 +137,13 @@
                     class="w-full h-[138px] object-cover"
                   />
                   <div class="flex flex-col gap-1.5 mt-4 px-4">
-                    <h2 class="text-[18px] font-bold">Rumahnya Angga</h2>
+                    <h3 class="text-[18px] font-bold">Rumahnya Angga</h3>
                     <p class="text-[14px] text-secondary">
                       9,301 sqft • House • Rent
                     </p>
                     <p class="text-[14px] text-secondary">
                       <span class="text-[16px] font-bold text-[#C7A5FF]"
-                        >$69,000</span
+                        ><strong>$69,000</strong></span
                       >/month
                     </p>
                   </div>
@@ -151,7 +153,7 @@
             <!-- Item 2 -->
             <a
               href="#"
-              class="swiper-slide max-w-[230px] bg-accent rounded-[16px] pb-4 overflow-hidden"
+              class="swiper-slide max-w-[230px] bg-accent rounded-[16px] pb-4 overflow-hidden transition-all duration-300 hover:ring hover:ring-foreground"
             >
               <div class="flex flex-col w-full">
                 <div class="relative overflow-hidden">
@@ -160,13 +162,13 @@
                     class="w-full h-[138px] object-cover"
                   />
                   <div class="flex flex-col gap-1.5 mt-4 px-4">
-                    <h2 class="text-[18px] font-bold">Maruji Inko</h2>
+                    <h3 class="text-[18px] font-bold">Maruji Inko</h3>
                     <p class="text-[14px] text-secondary">
                       2,891 sqft • House • Rent
                     </p>
                     <p class="text-[14px] text-secondary">
                       <span class="text-[16px] font-bold text-[#C7A5FF]"
-                        >$12,593</span
+                        ><strong>$12,593</strong></span
                       >/month
                     </p>
                   </div>
@@ -178,11 +180,14 @@
       </section>
 
       <!-- Popular Section -->
-      <section class="mt-[30px] px-6 pb-[38px]">
-        <h3 class="text-[16px] font-semibold leading-[24px]">Popular Cities</h3>
+      <section class="px-6">
+        <h2 class="text-[16px] font-semibold leading-[24px]">Popular Cities</h2>
         <div class="grid grid-cols-2 gap-5 mt-2">
           <!-- Item 1 -->
-          <a href="#" class="bg-accent rounded-[16px] overflow-hidden">
+          <a
+            href="#"
+            class="bg-accent rounded-[16px] overflow-hidden transition-all duration-300 hover:ring hover:ring-foreground"
+          >
             <div class="relative shrink-0">
               <img
                 src="./assets/images/thumbnails/city-1.png"
@@ -190,13 +195,16 @@
               />
             </div>
             <div class="p-4">
-              <h6 class="text-[16px] font-bold">New York</h6>
+              <h3 class="text-[16px] font-bold">New York</h3>
               <p class="text-[14px] text-secondary mt-1.5">193 house</p>
             </div>
           </a>
 
           <!-- Item 2 -->
-          <a href="#" class="bg-accent rounded-[16px] overflow-hidden">
+          <a
+            href="#"
+            class="bg-accent rounded-[16px] overflow-hidden transition-all duration-300 hover:ring hover:ring-foreground"
+          >
             <div class="relative shrink-0">
               <img
                 src="./assets/images/thumbnails/city-2.png"
@@ -204,13 +212,16 @@
               />
             </div>
             <div class="p-4">
-              <h6 class="text-[16px] font-bold">Kyoto</h6>
+              <h3 class="text-[16px] font-bold">Kyoto</h3>
               <p class="text-[14px] text-secondary mt-1.5">772 house</p>
             </div>
           </a>
 
           <!-- Item 3 -->
-          <a href="#" class="bg-accent rounded-[16px] overflow-hidden">
+          <a
+            href="#"
+            class="bg-accent rounded-[16px] overflow-hidden transition-all duration-300 hover:ring hover:ring-foreground"
+          >
             <div class="relative shrink-0">
               <img
                 src="./assets/images/thumbnails/city-3.png"
@@ -218,13 +229,16 @@
               />
             </div>
             <div class="p-4">
-              <h6 class="text-[16px] font-bold">Jakarta</h6>
-              <p class="text-[14px] text-secondary mt-1.5">193 house</p>
+              <h3 class="text-[16px] font-bold">Jakarta</h3>
+              <p class="text-[14px] text-secondary mt-1.5">425 house</p>
             </div>
           </a>
 
           <!-- Item 4 -->
-          <a href="#" class="bg-accent rounded-[16px] overflow-hidden">
+          <a
+            href="#"
+            class="bg-accent rounded-[16px] overflow-hidden transition-all duration-300 hover:ring hover:ring-foreground"
+          >
             <div class="relative shrink-0">
               <img
                 src="./assets/images/thumbnails/city-4.png"
@@ -232,13 +246,16 @@
               />
             </div>
             <div class="p-4">
-              <h6 class="text-[16px] font-bold">Hongkong</h6>
+              <h3 class="text-[16px] font-bold">Hongkong</h3>
               <p class="text-[14px] text-secondary mt-1.5">992 house</p>
             </div>
           </a>
 
           <!-- Item 5 -->
-          <a href="#" class="bg-accent rounded-[16px] overflow-hidden">
+          <a
+            href="#"
+            class="bg-accent rounded-[16px] overflow-hidden transition-all duration-300 hover:ring hover:ring-foreground"
+          >
             <div class="relative shrink-0">
               <img
                 src="./assets/images/thumbnails/city-1.png"
@@ -246,13 +263,16 @@
               />
             </div>
             <div class="p-4">
-              <h6 class="text-[16px] font-bold">New York</h6>
+              <h3 class="text-[16px] font-bold">New York</h3>
               <p class="text-[14px] text-secondary mt-1.5">193 house</p>
             </div>
           </a>
 
           <!-- Item 6 -->
-          <a href="#" class="bg-accent rounded-[16px] overflow-hidden">
+          <a
+            href="#"
+            class="bg-accent rounded-[16px] overflow-hidden transition-all duration-300 hover:ring hover:ring-foreground"
+          >
             <div class="relative shrink-0">
               <img
                 src="./assets/images/thumbnails/city-2.png"
@@ -260,7 +280,7 @@
               />
             </div>
             <div class="p-4">
-              <h6 class="text-[16px] font-bold">Kyoto</h6>
+              <h3 class="text-[16px] font-bold">Kyoto</h3>
               <p class="text-[14px] text-secondary mt-1.5">772 house</p>
             </div>
           </a>
@@ -269,10 +289,10 @@
     </main>
 
     <!-- Bottom Navbar -->
-    <nav class="sticky bottom-0 z-50">
+    <nav class="fixed w-full bottom-0 z-50 max-w-[640px]">
       <div class="flex justify-center w-full px-6 pb-[30px]">
         <ul
-          class="flex gap-8 rounded-[100px] w-[345px] bg-accent px-[39px] py-3.5"
+          class="flex gap-8 rounded-[100px] w-full justify-center bg-accent px-[39px] py-3.5"
         >
           <li>
             <a
@@ -288,48 +308,68 @@
           <li>
             <a
               href="./chats.html"
-              class="flex flex-col items-center justify-between gap-1.5"
+              class="group flex flex-col items-center justify-between gap-1.5"
             >
               <div class="relative h-6 w-6">
-                <img
-                  src="./assets/images/icons/message-text.svg"
-                  class="h-6 w-6"
-                />
                 <div
-                  class="absolute top-0 right-[0.5px] w-2 h-2 bg-[#FF2929] rounded-full"
+                  class="icon-chats transition-all duration-300 group-hover:bg-foreground"
+                >
+                  <img
+                    src="./assets/images/icons/message-text.svg"
+                    class="h-6 w-6 group-hover:opacity-0 transition-all duration-300"
+                  />
+                </div>
+                <div
+                  class="absolute z-50 top-0 right-[0.5px] w-2 h-2 bg-[#FF2929] rounded-full"
                 ></div>
               </div>
-              <p class="font-semibold text-[12px] text-secondary">Chats</p>
+              <p
+                class="font-semibold transition-all duration-300 text-[12px] text-secondary group-hover:text-foreground"
+              >
+                Chats
+              </p>
             </a>
           </li>
 
           <li>
             <a
               href="#"
-              class="flex flex-col items-center justify-between gap-1.5"
+              class="group flex flex-col items-center justify-between gap-1.5"
             >
-              <div class="relative h-6 w-6">
+              <div
+                class="relative h-6 w-6 icon-saved transition-all duration-300 group-hover:bg-foreground"
+              >
                 <img
                   src="./assets/images/icons/archive-tick.svg"
-                  class="h-6 w-6"
+                  class="h-6 w-6 group-hover:opacity-0 transition-all duration-300"
                 />
               </div>
-              <p class="font-semibold text-[12px] text-secondary">Saved</p>
+              <p
+                class="font-semibold text-[12px] text-secondary group-hover:text-foreground"
+              >
+                Saved
+              </p>
             </a>
           </li>
 
           <li>
             <a
               href="#"
-              class="flex flex-col items-center justify-between gap-1.5"
+              class="group flex flex-col items-center justify-between gap-1.5"
             >
-              <div class="relative h-6 w-6">
+              <div
+                class="relative h-6 w-6 icon-settings group-hover:bg-foreground transition-all duration-300"
+              >
                 <img
                   src="./assets/images/icons/setting-2.svg"
-                  class="h-6 w-6"
+                  class="h-6 w-6 group-hover:opacity-0 transition-all duration-300"
                 />
               </div>
-              <p class="font-semibold text-[12px] text-secondary">Settings</p>
+              <p
+                class="font-semibold text-[12px] text-secondary group-hover:text-foreground transition-all duration-300"
+              >
+                Settings
+              </p>
             </a>
           </li>
         </ul>
