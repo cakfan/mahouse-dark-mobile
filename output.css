@@ -245,6 +245,9 @@
   .mt-\[30px\] {
     margin-top: 30px;
   }
+  .mt-auto {
+    margin-top: auto;
+  }
   .mr-\[40px\] {
     margin-right: 40px;
   }
