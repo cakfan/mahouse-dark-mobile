@@ -448,6 +448,9 @@
   .overflow-x-hidden {
     overflow-x: hidden;
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-\[16px\] {
     border-radius: 16px;
   }
